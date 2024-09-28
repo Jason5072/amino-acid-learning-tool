@@ -6,38 +6,43 @@
     <title>Amino Acid Learning Tool</title>
     <style>
         body {
+            font-family: 'Times New Roman', Times, serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: "Times New Roman", Times, serif;
+            background-color: #f0f0f0;
         }
-
         h1 {
-            font-size: 3em;
+            text-align: center;
+            font-size: 3rem;
         }
-
-        .start-btn {
+        .options {
+            text-align: center;
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.5em;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
         }
-
-        .start-btn:hover {
-            background-color: #45a049;
+        .options a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .options a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Amino Acid Learning Tool</h1>
-    <!-- 添加点击事件，打开新页面 -->
-    <button class="start-btn" onclick="window.open('options.html', '_blank')">Start</button>
+    <div>
+        <h1>Welcome to the Amino Acid Learning Tool</h1>
+        <div class="options">
+            <a href="learn-amino-acid.html">Learn Amino Acids</a>
+            <a href="options.html">Test Your Understanding</a>
+        </div>
+    </div>
 </body>
 </html>

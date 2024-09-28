@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Options</title>
+    <title>Test Your Understanding</title>
     <style>
         body {
+            font-family: 'Times New Roman', Times, serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: "Times New Roman", Times, serif;
+            background-color: #f0f0f0;
         }
-
         h1 {
-            font-size: 2.5em;
+            text-align: center;
+            font-size: 2.5rem;
         }
-
-        .option-btn {
-            margin: 20px;
+        .test-options {
+            text-align: center;
+        }
+        .test-options a {
+            display: inline-block;
+            margin: 10px;
             padding: 15px 30px;
-            font-size: 1.5em;
-            background-color: #4CAF50;
+            font-size: 1.2rem;
             color: white;
-            border: none;
+            background-color: #28a745;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
         }
-
-        .option-btn:hover {
-            background-color: #45a049;
+        .test-options a:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
-    <h1>Select an Option</h1>
-    <button class="option-btn" onclick="alert('Learning Amino Acids...')">Learn Amino Acids</button>
-    <button class="option-btn" onclick="alert('Testing Your Knowledge...')">Test Your Knowledge</button>
+    <div>
+        <h1>Test Your Amino Acid Knowledge</h1>
+        <div class="test-options">
+            <a href="#">Start Quiz</a>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
 </body>
 </html>
